@@ -5,8 +5,7 @@ import { Search } from "lucide-react";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { ORIGINAL_IMG_BASE_URL } from "../../../../../../Downloads/mern-netflix-clone-master/frontend/src/utils/constants";
-
+import { ORIGINAL_IMG_BASE_URL } from "../utils/constants";
 const SearchPage = () => {
     const [activeTab,setActiveTab]=useState("movie");
     const [searchTerm,setSearchTerm]=useState("");

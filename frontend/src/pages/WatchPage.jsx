@@ -4,10 +4,10 @@ import { useContentStore } from "../store/content";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { ORIGINAL_IMG_BASE_URL } from "../../../../../../Downloads/mern-netflix-clone-master/frontend/src/utils/constants";
 import { SMALL_IMG_BASE_URL } from "../utils/constants";
 import { formatReleaseDate } from "../utils/dateFunction";
 import WatchPageSkeleton from "../components/WatchPageSkeleton";
+import { ORIGINAL_IMG_BASE_URL } from "../utils/constants";
 
 
 const WatchPage = () => {
