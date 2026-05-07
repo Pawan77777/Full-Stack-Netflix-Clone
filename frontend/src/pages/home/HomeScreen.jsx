@@ -2,7 +2,7 @@ import { Info, Play } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
 import useGetTrendingContent from "../../hooks/useGetTrendingContent";
-import { MOVIE_CATEGORIES, original_IMG_BASE_URL, TV_CATEGORIES } from "../../utils/constants";
+import { MOVIE_CATEGORIES, ORIGINAL_IMG_BASE_URL, TV_CATEGORIES } from "../../utils/constants";
 import { useContentStore } from "../../store/content";
 import MovieSlider from "../../components/MovieSlider";
 import { useState } from "react";
@@ -24,7 +24,7 @@ const HomeScreen = () => {
         {imageLoading && (
                 <div className="absolute top-0 left-0 w-full h-full bg-black/70 flex items-center justify-center -z-10 shimmer" />
         )}
-        <img src={original_IMG_BASE_URL+trendingContent?.backdrop_path} alt="Hero Img" 
+        <img src={ORIGINAL_IMG_BASE_URL+trendingContent?.backdrop_path} alt="Hero Img" 
         className="absolute top-0 left-0 w-full h-full object-cover -z-50" onLoad={()=> setImageLoading(false)}/>
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 -z-50" aria-hidden="true"/>
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center px-8 md:px-16 lg:px-32">
